@@ -1,0 +1,150 @@
+/* Styling untuk latar belakang halaman */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #8c1aff;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling untuk kontainer kalkulator */
+.bmi-calculator {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+/* Styling judul */
+h2 {
+    margin-top: 0;
+}
+
+/* Styling label dan input */
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.bdn {
+    margin-bottom: 10px;
+}
+
+input[type="number"],
+select {
+    width: 85%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+}
+
+/* Container untuk tombol */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Styling tombol reset dan submit */
+button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:first-of-type {
+    background-color: rgb(252, 126, 204);
+    color: black;
+}
+
+button:first-of-type:hover {
+    background-color: #333;;
+    color: #fff;
+}
+
+button:last-of-type {
+    background-color: #e60000;
+}
+
+button:last-of-type:hover {
+    background-color: #ccc;
+    color: crimson;
+}
+
+/* Styling hasil BMI */
+h3 {
+    margin: 20px 0 10px;
+    font-size: 1.5em;
+}
+
+.sp {
+    font-size: 50px;
+}
+
+/* Styling kategori */
+#kategori {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Bar indikator BMI */
+.bmi-bar {
+    display: flex;
+    margin-top: 20px;
+    height: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bmi-bar .underweight { 
+    background-color: #f39c12;
+    width: 25%;
+}
+
+.bmi-bar .normal { 
+    background-color: #2ecc71;
+    width: 25%;
+}
+
+.bmi-bar .overweight { 
+    background-color: #e67e22;
+    width: 25%;
+}
+
+.bmi-bar .obesity { 
+    background-color: #e74c3c;
+    width: 25%;
+}
+
+/* Label untuk indikator BMI */
+.bmi-labels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #555;
+}
+
+.bmi-labels span {
+    width: 25%;
+    text-align: center;
+}
+
+.wm {
+    margin-left: 50px;
+    font-size: 14px;
+    font-family: monospace;
+
+}

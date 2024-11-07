@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <!-- Link ke file CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="bmi-calculator">
+        <h2>Kalkulator BMI</h2>
+
+        <!-- Pilihan Gender -->
+        <label for="gender">Jenis Kelamin:</label>
+        <select id="gender">
+            <option value="male">Laki-laki</option>
+            <option value="female">Perempuan</option>
+        </select>
+        <div class="bdn">
+            <label for="beratBadan">Berat Badan (kg):</label>
+            <input type="number" id="beratBadan" value="0">
+
+            <label for="tinggiBadan">Tinggi Badan (cm):</label>
+            <input type="number" id="tinggiBadan" value="0">
+        </div>
+        <button onclick="resetForm()">RESET</button>
+        <button onclick="hitungBMI()">SUBMIT</button>
+
+        <h3>BMI kamu adalah</h3>
+        <span class="sp" id="hasilBMI">0</span>
+        <p id="kategori">N/A</p>
+
+        <!-- Bar Indikator BMI -->
+        <div class="bmi-bar">
+            <div class="underweight"></div>
+            <div class="normal"></div>
+            <div class="overweight"></div>
+            <div class="obesity"></div>
+        </div>
+        <div style="display: flex; justify-content: space-between; font-size: 12px; margin-top: 5px;">
+            <span>KEKURANGAN < 18.5</span>
+                    <span>NORMAL 18.5 - 25</span>
+                    <span>KELEBIHAN 25 - 30</span>
+                    <span>OBESITAS > 30</span>
+        </div>
+        
+    </div>
+    <div class="wm">
+        <h1>This web was created by fahmi</h1>
+    </div>
+
+    <!-- Link ke file JavaScript -->
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
